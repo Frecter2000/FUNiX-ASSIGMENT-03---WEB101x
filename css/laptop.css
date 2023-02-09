@@ -1,0 +1,200 @@
+/* CUSTOM CHUNG CHO HE THONG */
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #000000;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+.text-grey {
+  color: grey;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.grid {
+  display: grid;
+}
+/* ------------------------------------------------------------- */
+/* margin -pading custom */
+.mg-30 {
+  margin: 30px;
+}
+.pd-30 {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.pdl-3 {
+  padding-left: 3rem;
+}
+.pdr-1 {
+  padding-right: 2rem;
+}
+/* banner */
+.banner_name h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  color: aliceblue;
+  transform: translateX(-50%);
+}
+.banner_name span {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  color: aliceblue;
+  transform: translateX(-50%);
+}
+/* ----- */
+/* custom theo id */
+#target {
+  padding: 10px 30px 0px 40px;
+  background-color: #f2f2f2;
+}
+
+#personal-info {
+  background-color: #e6e6e6;
+}
+#personal-info,
+#target {
+  padding-top: 50px;
+}
+#personal-info h1 {
+  padding-left: 30px;
+}
+
+#job-info {
+  margin: 50px 0;
+}
+#certificate {
+  background-color: #f2f2f2;
+}
+
+/* vẽ hình tròn màu xanh trước list */
+#job-position::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #0099ff;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+/* tinh chỉnh chữ (hiện tại) có bo tròn màu */
+.now {
+  background-color: #0099ff;
+  border: 1px solid #0099ff;
+  padding: 3px 10px 3px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: x-small;
+}
+.date-time {
+  font-size: small;
+}
+/* ------------------------------- */
+/* kỹ năng  */
+.skill-level {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 13px;
+  width: 45px;
+}
+
+.not-show-skill-level {
+  background: #dddddd;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+/* sở thích */
+.hobby-icon i {
+  font-size: 150%;
+  overflow: hidden;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #0099ff;
+  font-size: 150%;
+  width: 50px;
+  height: 50px;
+}
+/* border chứng chỉ  */
+.border-certificate-right {
+  border-right: orange 1px solid;
+  margin-bottom: 10px;
+}
+.border-certificate-top {
+  border-top: orange 1px solid;
+  padding-top: 10px;
+}
+/* dự án */
+.project {
+  padding: 3rem;
+  margin: 3rem;
+}
+/* footer */
+.footer-text {
+  align-self: center;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+.center-div {
+  display: grid !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+/* phần mở rộng showmore-showless*/
+.skill {
+  position: relative;
+  padding-bottom: 20px;
+}
+.skill-content {
+  display: none;
+}
+.view-more-btn {
+  position: absolute;
+  display: none;
+}
+.view-more-btn:hover {
+  background-color: yellow;
+  border-radius: 10%;
+
+  margin-bottom: 30px;
+}
+
+/* ----------------- */
+
+@media screen and (min-width: 1024px) {
+  .job-info-container {
+    display: grid;
+
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .job-info-container-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}

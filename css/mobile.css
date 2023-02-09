@@ -1,0 +1,45 @@
+/* Khi chuyển sang mobile sẽ thực thi */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  /* phần banner */
+  .banner_name h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    color: aliceblue;
+    transform: translateX(-50%);
+    font-size: 100%;
+  }
+  .banner_name span {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    color: aliceblue;
+    transform: translateX(-50%);
+    font-size: 50%;
+  }
+  .project {
+    padding: 0 !important;
+    padding-top: 10px !important;
+    margin: 0 !important;
+  }
+  .border-certificate-right {
+    border-right: none;
+    margin-bottom: 10px;
+  }
+  .border-certificate-top {
+    border-top: none;
+    padding-top: 10px;
+  }
+  /* chuyển phần info-job từ flex thành grid để dễ đọc  */
+  .footer-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-text {
+    display: none;
+  }
+  .project {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}

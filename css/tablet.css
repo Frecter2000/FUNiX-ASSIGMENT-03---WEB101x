@@ -1,0 +1,33 @@
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .banner_name h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: aliceblue;
+    transform: translateX(-50%);
+    font-size: 100%;
+  }
+  .banner_name span {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    color: aliceblue;
+    transform: translateX(-50%);
+    font-size: 50%;
+  }
+  .project {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .job-info-container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .job-info-container-child {
+    display: grid;
+  }
+  .job-info-container-child-margin {
+    margin-bottom: 30px;
+  }
+}
