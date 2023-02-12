@@ -1,4 +1,6 @@
 "use strict";
+
+// Phần hiển thị gmail
 let submitBtn = document.getElementById("Submit");
 
 const regex =
@@ -6,7 +8,7 @@ const regex =
 let x = document.getElementById("personal-container");
 let y = document.getElementById("email-form");
 x.style.display = "none";
-
+// return block nếu điều kiện regex đúng và focus nếu sai
 submitBtn.onclick = function myFunction() {
   let email = document.getElementById("email").value;
   if (regex.test(email)) {
@@ -16,6 +18,7 @@ submitBtn.onclick = function myFunction() {
     document.getElementById("email").focus();
   }
 };
+// hiển thị viewmore- viewless
 const skills = document.querySelectorAll(".skill");
 skills.forEach((skill) => {
   const btn = skill.querySelector(".view-more-btn");
